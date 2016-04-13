@@ -257,7 +257,7 @@ public class ChooseAreaActivity extends Activity {
             queryProvinces();
         } else {
             if (isFromWeatherActivity) {
-                Intent intent = new Intent(this, WeatherActivity.class);
+                Intent intent = new Intent(ChooseAreaActivity.this, WeatherActivity.class);
                 startActivity(intent);
             }
             finish();

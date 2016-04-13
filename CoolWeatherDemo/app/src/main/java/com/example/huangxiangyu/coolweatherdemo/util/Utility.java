@@ -75,8 +75,8 @@ public class Utility {
                 for (String c : allCounties) {
                     String[] array = c.split("\\|");
                     County county = new County();
-                    county.setCountyName(array[0]);
-                    county.setCountyCode(array[1]);
+                    county.setCountyName(array[1]);
+                    county.setCountyCode(array[0]);
                     county.setCityId(cityId);
 //                    将解析出来的数据存储到County表
                     coolWeatherDB.saveCounty(county);
